@@ -13,3 +13,13 @@ npm install next react react-dom
 npm run dev
 ```
 
+### Install bootstrap
+```
+npm install --save bootstrap
+```
+
+### Install ReactStrap
+```
+npm install --save reactstrap react react-dom
+```
+

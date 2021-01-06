@@ -46,6 +46,14 @@ app.get('/api/v1/test', async (req, res) =>{
 
 app.post('/api/v1/test', async (req, res) =>{
     //console.log(req.body);
+
+    await sleep(3000);
+    function sleep(ms){
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
+        });
+    };
+
     await Meta.create(req.body, (err) => {
         if(err){
             console.log(err);
